@@ -35,7 +35,7 @@ public class Tulip : MonoBehaviour
         {
             case TulipState.Kyuukon:
                 lifeTime += Time.deltaTime;
-                animator.SetFloat("TimeLeft", 1 - (tulipTime - lifeTime));
+                animator.SetFloat("TimeLeft", tulipTime - lifeTime);
                 //animator.GetAnimatorTransitionInfo
 
                 if (lifeTime > tulipTime)
